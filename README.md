@@ -122,6 +122,7 @@ helm upgrade --install cosmotech-api-latest \
   --values api/kubernetes/helm-chart/values-dev.yaml \
   --set image.tag=latest \
   --set config.api.version=latest
+  --recreate-pods
 ```
 
 To deploy a `vX` version, you can use the [api/kubernetes/helm-chart/values-dev-vX.yaml](api/kubernetes/helm-chart/values-dev-vX.yaml) like so :
