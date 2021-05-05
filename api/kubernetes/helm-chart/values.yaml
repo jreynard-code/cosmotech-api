@@ -103,3 +103,5 @@ config:
   csm:
     platform:
       vendor: azure
+      argo:
+        base-url: "https://argo-server.argo.svc.cluster.local:2746"
