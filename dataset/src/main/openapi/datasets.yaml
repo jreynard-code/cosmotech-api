@@ -235,6 +235,9 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/DatasetCompatibility'
+              examples:
+                TwoDatasetCompatibility:
+                  $ref: '#/components/examples/TwoDatasetCompatibility'
         "400":
           description: Bad request
         "404":

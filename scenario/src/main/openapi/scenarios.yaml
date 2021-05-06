@@ -278,6 +278,9 @@ paths:
               type: array
               items:
                 $ref: '#/components/schemas/ScenarioUser'
+            examples:
+              TwoOrganizationToAddOrReplace:
+                $ref: '#/components/examples/TwoScenarioToAddOrReplace'
       responses:
         "201":
           description: the Scenario Users
@@ -287,6 +290,9 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/ScenarioUser'
+              examples:
+                TwoWorkspaceUsers:
+                  $ref: '#/components/examples/TwoScenarioUsers'
         "400":
           description: Bad request
         "404":
@@ -373,6 +379,9 @@ paths:
               type: array
               items:
                 $ref: '#/components/schemas/ScenarioRunTemplateParameterValue'
+            examples:
+              TwoScenarioRunTemplateParameterValueToAddOrReplace:
+                $ref: '#/components/examples/TwoScenarioRunTemplateParameterValueToAddOrReplace'
       responses:
         "201":
           description: the Parameter values
@@ -382,6 +391,9 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/ScenarioRunTemplateParameterValue'
+              examples:
+                TwoWorkspaceUsers:
+                  $ref: '#/components/examples/TwoScenarioRunTemplateParameterValueUsers'
         "400":
           description: Bad request
         "404":
