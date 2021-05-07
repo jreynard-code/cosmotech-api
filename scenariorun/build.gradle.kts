@@ -6,6 +6,8 @@ import org.openapitools.generator.gradle.plugin.tasks.ValidateTask
 dependencies {
   implementation("io.argoproj.workflow:argo-client-java:v3.0.1")
   api(project(":cosmotech-api-common"))
+  implementation(project(":cosmotech-connector-api"))
+  implementation(project(":cosmotech-dataset-api"))
 }
 
 sourceSets {
