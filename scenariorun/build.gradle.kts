@@ -8,6 +8,7 @@ dependencies {
   api(project(":cosmotech-api-common"))
   implementation(project(":cosmotech-connector-api"))
   implementation(project(":cosmotech-dataset-api"))
+  implementation(project(":cosmotech-workspace-api"))
 }
 
 sourceSets {
