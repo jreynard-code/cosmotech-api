@@ -10,6 +10,7 @@ dependencies {
   implementation(project(":cosmotech-dataset-api"))
   implementation(project(":cosmotech-workspace-api"))
   implementation(project(":cosmotech-solution-api"))
+  implementation(project(":cosmotech-scenario-api"))
 }
 
 sourceSets {

@@ -440,6 +440,10 @@ components:
         runTemplateId:
           type: string
           description: the Solution Run Template Id associated with this Scenario
+        workspaceId:
+          type: string
+          readOnly: true
+          description: the associated Workspace Id
         users:
           type: array
           description: the list of users Id with their role
@@ -478,6 +482,7 @@ components:
             $ref: '#/components/schemas/ScenarioRunTemplateParameterValue'
       required:
         - name
+        - runTemplateId
     ScenarioRunTemplateParameterValue:
       type: object
       description: the value of a Solution Run Template parameter for a Scenario
@@ -599,6 +604,7 @@ components:
           - Brewery
           - reference
         ownerId: "1"
+        worskspaceId: "1"
         solutionId: "1"
         solutionName: Brewery Solution
         runTemplateId: "1"
@@ -631,6 +637,7 @@ components:
             - Brewery
             - reference
           ownerId: "1"
+          worskspaceId: "1"
           solutionId: "1"
           solutionName: Brewery Solution
           runTemplateId: "1"
@@ -659,6 +666,7 @@ components:
             - example
           parentId: "1"
           ownerId: "1"
+          worskspaceId: "1"
           solutionId: "1"
           solutionName: Brewery Solution
           runTemplateId: "1"
@@ -686,6 +694,7 @@ components:
             - Brewery
           parentId: "1"
           ownerId: "2"
+          worskspaceId: "1"
           solutionId: "1"
           solutionName: Brewery Solution
           runTemplateId: "1"
@@ -723,6 +732,7 @@ components:
           - Brewery
           - reference
         ownerId: "1"
+        worskspaceId: "1"
         solutionId: "1"
         solutionName: Brewery Solution
         runTemplateId: "1"
@@ -766,6 +776,7 @@ components:
             - Brewery
             - reference
           ownerId: "1"
+          worskspaceId: "1"
           users:
             - id: "1"
               name: Bob
@@ -793,6 +804,7 @@ components:
             - example
           parentId: "1"
           ownerId: "1"
+          worskspaceId: "1"
           users:
             - id: "1"
               name: Bob
@@ -819,6 +831,7 @@ components:
             - Brewery
           parentId: "1"
           ownerId: "2"
+          worskspaceId: "1"
           users:
             - id: "1"
               name: Bob
